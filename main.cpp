@@ -11,14 +11,14 @@ void dgt(int d[])           //Funkcja do zmiany liczby na cyfry
         d[0]/=10;
         c++;
     }
-    d[0]=c-1;               //b[f][0] to liczba cyfr
+    d[0]=c-1;               //b[][0] to liczba cyfr
 }
 int main()
 {
     int a;
     cin>>a;
     int b[a][10];
-    for(int f=0;f<a;f++)    //Input do b[f][0]
+    for(int f=0;f<a;f++)    //Input do b[][0]
     {
         cin>>b[f][0];
     }
