@@ -18,7 +18,7 @@ int main()
     int a;
     cin>>a;
     int b[a][10];
-    for(int f=0;f<a;f++)    //Input do b[x][0] gdzie x to numer liczby
+    for(int f=0;f<a;f++)    //Input do b[x][0] gdzie x to numer liczby aasdfsadfgag
     {
         cin>>b[f][0];
     }
