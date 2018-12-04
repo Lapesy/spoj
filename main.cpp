@@ -1,10 +1,10 @@
 #include <iostream>
-
+#include <math.h>
 using namespace std;
 
 void dgt(int d[])           //Funkcja do zmiany liczby na cyfry
 {
-    int c=1;
+    int c=1,t;
     while(d[0]>0)
     {
         d[c]=d[0]%10;
@@ -32,7 +32,10 @@ int main()
         {
             if(b[f][g+1]!=b[f][b[f][0]-g])
             {
-
+                t=0;
+                for(int h=0;h<b[f][0];h++)
+                    t+=pow(10,h)*(b[f][h+1]+b[f][b[f][0]-h]);
+                    cout<<t<<" ";
             }
         }
     }
