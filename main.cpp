@@ -22,15 +22,15 @@ int main()
     {
         cin>>b[f][0];
     }
-    for(int f=0;f<a;f++)    //ca³y input na cyfry
+    for(int f=0;f<a;f++)    //caly input na cyfry
     {
         dgt(b[f]);
     }
     for(int f=0;f<a;f++)
     {
-        for(int g=0;g<b[f][0]/2+1;g++)
+        for(int g=0;g<b[f][0]/2;g++)
         {
-            if(b[f][g+1]!=b[f][b[f][0]-g])
+
                 cout<<b[f][g+1]<<" "<<b[f][b[f][0]-g];
         }
     }
