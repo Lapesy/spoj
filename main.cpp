@@ -22,7 +22,7 @@ int main()
     {
         cin>>b[f][0];
     }
-    for(int f=0;f<a;f++)    //cały input na cyfry
+    for(int f=0;f<a;f++)    //caly input na cyfry
     {
         dgt(b[f]);
     }
