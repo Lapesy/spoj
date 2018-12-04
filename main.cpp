@@ -15,7 +15,7 @@ void dgt(int d[])           //Funkcja do zmiany liczby na cyfry
 }
 int main()
 {
-    int a,t;
+    int a,t,i;
     cin>>a;
     int b[a][10];
     for(int f=0;f<a;f++)    //Input do b[x][0] gdzie x to numer liczby
@@ -28,16 +28,24 @@ int main()
     }
     for(int f=0;f<a;f++)
     {
+        i=0;
+        t=0;
         for(int g=0;g<b[f][0]/2;g++)
         {
-            if(b[f][g+1]!=b[f][b[f][0]-g])
+            i=0;
+            while(b[f][g+1]!=b[f][b[f][0]-g])
             {
+                i++;
                 t=0;
                 for(int h=0;h<b[f][0];h++)
+                {
                     t+=pow(10,h)*(b[f][h+1]+b[f][b[f][0]-h]);
-                    cout<<t<<" ";
+                }
+                b[f][0]=t;
+                dgt(b[f]);
             }
         }
+        cout<<t<<" "<<i<<endl;
     }
     return 0;
 }
