@@ -28,7 +28,11 @@ int main()
     }
     for(int f=0;f<a;f++)
     {
-
+        for(int g=0;g<b[f][0]/2+1;g++)
+        {
+            if(b[f][g+1]!=b[f][b[f][0]-g])
+                cout<<b[f][g+1]<<" "<<b[f][b[f][0]-g];
+        }
     }
     return 0;
 }
