@@ -22,7 +22,7 @@ int main()
     {
         cin>>b[f][0];
     }
-    for(int f=0;f<a;f++)
+    for(int f=0;f<a;f++)    //ca³y input na cyfry
     {
         dgt(b[f]);
     }
