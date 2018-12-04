@@ -22,7 +22,7 @@ int main()
     {
         cin>>b[f][0];
     }
-    for(int f=0;f<a;f++)    //caly input na cyfry
+    for(int f=0;f<a;f++)    //cały input na cyfry
     {
         dgt(b[f]);
     }
@@ -30,8 +30,7 @@ int main()
     {
         for(int g=0;g<b[f][0]/2;g++)
         {
-
-                cout<<b[f][g+1]<<" "<<b[f][b[f][0]-g];
+            if(b[f][g+1]!=b[f][b[f][0]-g])
         }
     }
     return 0;
