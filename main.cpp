@@ -18,7 +18,7 @@ int main()
     int a,t,i;
     cin>>a;
     int b[a][10];
-    for(int f=0;f<a;f++)    //Input do b[x][0] gdzie x to numer liczby
+    for(int f=0;f<a;f++)	//Input do b[x][0] gdzie x to numer liczby
     {
         cin>>b[f][0];
     }
@@ -30,9 +30,6 @@ int main()
     {
         i=0;
         t=0;
-        for(int g=0;g<b[f][0]/2;g++)
-        {
-            i=0;
             while(b[f][g+1]!=b[f][b[f][0]-g])
             {
                 i++;
@@ -44,7 +41,6 @@ int main()
                 b[f][0]=t;
                 dgt(b[f]);
             }
-        }
         cout<<t<<" "<<i<<endl;
     }
     return 0;
