@@ -28,20 +28,20 @@ int main()
     }
     for(int f=0;f<a;f++)
     {
-        i=0;
-        t=0;
-            while(b[f][g+1]!=b[f][b[f][0]-g])
-            {
-                i++;
-                t=0;
-                for(int h=0;h<b[f][0];h++)
-                {
-                    t+=pow(10,h)*(b[f][h+1]+b[f][b[f][0]-h]);
-                }
-                b[f][0]=t;
-                dgt(b[f]);
-            }
-        cout<<t<<" "<<i<<endl;
+    	for(int g=0;g<(b[f][0]+1)/2;)
+		{
+			if(b[f][g+1]!=b[f][b[f][0]-g])
+			{
+				t+=pow(10,g)*(b[f][g+1]+b[f][b[f][0]-g]);
+				b[f][0]=t;
+				dgt(b[f]);
+				g=0;
+			}
+			else
+			{
+				g++;
+			}
+    	}
     }
     return 0;
 }
