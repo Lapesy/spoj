@@ -28,25 +28,6 @@ int main()
     }
     for(int f=0;f<a;f++)
     {
-<<<<<<< HEAD
-    	i=0;
-    	for(int g=0;g<(b[f][0]+1)/2;)
-		{
-			if(b[f][g+1]!=b[f][b[f][0]-g])
-			{
-				i++;
-				t+=pow(10,g)*(b[f][g+1]+b[f][b[f][0]-g]);
-				b[f][0]=t;
-				dgt(b[f]);
-				g=0;
-			}
-			else
-			{
-				g++;
-			}
-			cout<<d
-    	}
-=======
         i=0;
         t=0;
         for(int g=0;g<b[f][0]/2;g++)
@@ -65,7 +46,6 @@ int main()
             }
         }
         cout<<t<<" "<<i<<endl;
->>>>>>> parent of a742611... nic
     }
     return 0;
 }
