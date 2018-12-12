@@ -28,10 +28,12 @@ int main()
     }
     for(int f=0;f<a;f++)
     {
+    	i=0;
     	for(int g=0;g<(b[f][0]+1)/2;)
 		{
 			if(b[f][g+1]!=b[f][b[f][0]-g])
 			{
+				i++;
 				t+=pow(10,g)*(b[f][g+1]+b[f][b[f][0]-g]);
 				b[f][0]=t;
 				dgt(b[f]);
@@ -41,6 +43,7 @@ int main()
 			{
 				g++;
 			}
+			cout<<d
     	}
     }
     return 0;
